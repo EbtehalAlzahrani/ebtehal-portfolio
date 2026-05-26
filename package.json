@@ -3,18 +3,10 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://EbtehalAlzahrani.github.io/ebtehal-portfolio",
   "scripts": {
-    "build": "vite build",
     "dev": "vite",
-<<<<<<< HEAD
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-=======
-    "deploy": "npm run build && wrangler deploy",
-    "preview": "npm run build && wrangler dev"
->>>>>>> ab9e7d15711305bab7067bf9b42df57dd827bb40
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
