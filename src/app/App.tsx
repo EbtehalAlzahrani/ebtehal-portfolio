@@ -320,7 +320,8 @@ function Hero() {
               View My Work <ArrowUpRight size={14} />
             </button>
             <a
-              href="#"
+              href="./docs/Ebtehal_Alzahrani_CV.pdf"
+              download="Ebtehal_Alzahrani_CV.pdf"
               className="flex items-center gap-2 rounded-full border-2 border-[#f9a8d4] text-[#be185d] px-7 py-3.5 font-sans text-sm font-semibold hover:bg-[#fce7f3] transition-colors"
             >
               Download CV <Download size={14} />
