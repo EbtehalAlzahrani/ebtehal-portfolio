@@ -33,6 +33,7 @@ const PROJECTS = [
     tags: ["HTML", "CSS", "JavaScript", "Python", "MongoDB"],
     image: Rafah,
     tagColors: ["purple", "blue", "pink", "yellow", "green"],
+    Link: "https://github.com/SWELeen/Senior-Project.git",
   },
   {
     id: "02",
@@ -44,6 +45,7 @@ const PROJECTS = [
     tags: ["Figma", "HTML", "CSS", "JavaScript"],
     image: GDG,
     tagColors: ["purple", "blue", "pink", "yellow", "green"],
+    Link: "https://gdguj.azurewebsites.net/",
   },
   {
     id: "03",
@@ -55,6 +57,7 @@ const PROJECTS = [
     tags: ["Figma"],
     image: Yaqeen,
     tagColors: ["pink"],
+    Link: "https://www.figma.com/design/Gx2jaklQnQHriakUYk0nv6/Yaqeen?node-id=0-1&t=tYngYcOPcpPKSJ2W-1",
   },
   {
     id: "04",
@@ -66,6 +69,7 @@ const PROJECTS = [
     tags: ["React", "JavaScript", "Figma", "Node.js", "MongoDB"],
     image: Rayah,
     tagColors: ["purple", "blue", "pink", "yellow", "green"],
+    Link: "https://github.com/Joudj7tam/Raya.github.io.git",
   },
   {
     id: "05",
@@ -77,6 +81,7 @@ const PROJECTS = [
     tags: ["Java", "XML", "Firebase", "Google Maps"],
     image: EstateMap,
     tagColors: ["pink", "yellow", "green", "blue"],
+    Link: "https://github.com/EbtehalAlzahrani/EstateMap_Rep.git",
   },
 ];
 
@@ -303,8 +308,8 @@ function Hero() {
             transition={{ duration: 0.6, delay: 0.28 }}
             className="text-muted-foreground text-lg leading-relaxed max-w-[480px] mb-10 font-sans"
           >
-            Software engineering graduate passionate about mobile apps, web development, and UI/UX design,
-            focused on creating impactful digital experiences through creativity and innovation.
+            Software Engineering graduate focused on full-stack web development and UI/UX design,
+            passionate about creating intuitive and impactful digital experiences.
           </motion.p>
 
           <motion.div
@@ -432,17 +437,26 @@ function Projects() {
             <div className="grid lg:grid-cols-2">
               <div className="p-10 lg:p-12 flex flex-col justify-between min-h-[320px]">
                 <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="font-mono text-xs text-muted-foreground font-medium uppercase tracking-wider">
-                      {PROJECTS[0].category}
-                    </span>
-                    <span className="font-mono text-xs text-muted-foreground">
-                      {PROJECTS[0].year}
-                    </span>
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <span className="font-mono text-xs text-muted-foreground font-medium uppercase tracking-wider block mb-2">
+                        {PROJECTS[0].category}
+                      </span>
+
+                      <h3 className="font-display text-3xl lg:text-4xl text-foreground">
+                        {PROJECTS[0].title}
+                      </h3>
+                    </div>
+
+                    <a
+                      href={PROJECTS[0].Link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-11 h-11 rounded-full border border-border flex items-center justify-center hover:bg-[#f3e8ff] hover:border-purple-300 transition-all duration-300 group/link"
+                    >
+                      <ArrowUpRight className="w-5 h-5 text-foreground group-hover/link:rotate-45 transition-transform duration-300" />
+                    </a>
                   </div>
-                  <h3 className="font-display text-3xl lg:text-4xl text-foreground mb-4">
-                    {PROJECTS[0].title}
-                  </h3>
                   <p className="text-muted-foreground leading-relaxed text-sm max-w-md mb-8">
                     {PROJECTS[0].description}
                   </p>
@@ -492,17 +506,26 @@ function Projects() {
                   />
                 </div>
                 <div className="p-8">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="font-mono text-xs text-muted-foreground font-medium uppercase tracking-wider">
-                      {project.category}
-                    </span>
-                    <span className="font-mono text-xs text-muted-foreground">
-                      {project.year}
-                    </span>
+                  <div className="flex items-start justify-between mb-3">
+                    <div>
+                      <span className="font-mono text-xs text-muted-foreground font-medium uppercase tracking-wider block mb-2">
+                        {project.category}
+                      </span>
+
+                      <h3 className="font-display text-2xl text-foreground">
+                        {project.title}
+                      </h3>
+                    </div>
+
+                    <a
+                      href={project.Link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 rounded-full border border-border flex items-center justify-center hover:bg-[#f3e8ff] hover:border-purple-300 transition-all duration-300 group/link shrink-0"
+                    >
+                      <ArrowUpRight className="w-4 h-4 text-foreground group-hover/link:rotate-45 transition-transform duration-300" />
+                    </a>
                   </div>
-                  <h3 className="font-display text-2xl text-foreground mb-3">
-                    {project.title}
-                  </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-5">
                     {project.description}
                   </p>
