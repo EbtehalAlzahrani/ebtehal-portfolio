@@ -33,7 +33,7 @@ const PROJECTS = [
     tags: ["HTML", "CSS", "JavaScript", "Python", "MongoDB"],
     image: Rafah,
     tagColors: ["purple", "blue", "pink", "yellow", "green"],
-    Link: "https://github.com/SWELeen/Senior-Project.git",
+    Link: "https://drive.google.com/file/d/1WLaR5QrUn9dSBD3op1q5deKon8b1DkUJ/view",
   },
   {
     id: "02",
@@ -57,7 +57,7 @@ const PROJECTS = [
     tags: ["Figma"],
     image: Yaqeen,
     tagColors: ["pink"],
-    Link: "https://www.figma.com/design/Gx2jaklQnQHriakUYk0nv6/Yaqeen?node-id=0-1&t=tYngYcOPcpPKSJ2W-1",
+    Link: "https://www.figma.com/design/Gx2jaklQnQHriakUYk0nv6/Yaqeen",
   },
   {
     id: "04",
@@ -69,7 +69,7 @@ const PROJECTS = [
     tags: ["React", "JavaScript", "Figma", "Node.js", "MongoDB"],
     image: Rayah,
     tagColors: ["purple", "blue", "pink", "yellow", "green"],
-    Link: "https://github.com/Joudj7tam/Raya.github.io.git",
+    Link: "https://drive.google.com/file/d/1v2eec71DWXRpPG3BxKH9QH3o3igO_JCF/view",
   },
   {
     id: "05",
