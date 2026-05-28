@@ -15,12 +15,12 @@ import {
   Trophy,
 } from "lucide-react";
 
-const logo = new URL("../images/logo.jpeg", import.meta.url).href;
-const Rafah = new URL("../images/Rafah.png", import.meta.url).href;
-const Rayah = new URL("../images/Rayah.jpeg", import.meta.url).href;
-const Yaqeen = new URL("../images/Yaqeen.png", import.meta.url).href;
-const GDG = new URL("../images/GDG.png", import.meta.url).href;
-const EstateMap = new URL("../images/EstateMap.png", import.meta.url).href;
+const logo = new URL("/images/logo.jpeg", import.meta.url).href;
+const Rafah = new URL("/images/Rafah.png", import.meta.url).href;
+const Rayah = new URL("/images/Rayah.jpeg", import.meta.url).href;
+const Yaqeen = new URL("/images/Yaqeen.png", import.meta.url).href;
+const GDG = new URL("/images/GDG.png", import.meta.url).href;
+const EstateMap = new URL("/images/EstateMap.png", import.meta.url).href;
 
 const PROJECTS = [
   {
@@ -325,7 +325,7 @@ function Hero() {
               View My Work <ArrowUpRight size={14} />
             </button>
             <a
-              href="./docs/Ebtehal_Alzahrani_CV.pdf"
+              href="/documents/Ebtehal_Alzahrani_CV.pdf"
               download="Ebtehal_Alzahrani_CV.pdf"
               className="flex items-center gap-2 rounded-full border-2 border-[#f9a8d4] text-[#be185d] px-7 py-3.5 font-sans text-sm font-semibold hover:bg-[#fce7f3] transition-colors"
             >
